@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            background-color: rgb(201, 171, 127);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form_container{
+            width: 350px;
+            background-color: aquamarine;
+            padding: 25px;
+        }
+        .form_group{
+            margin-bottom: 15px;
+        }
+        label{
+            color: rgb(148, 47, 47);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"]{
+            background-color: white;
+            color: black;
+            border-radius: 4px;
+        }
+        input[type="email"]{
+            background-color: white;
+            color: black;
+            border-radius: 4px;
+        }
+        input[type="password"]{
+            background-color: white;
+            color: black;
+            border-radius: 4px;
+        }
+        select[name="gender"]{
+            background-color: white;
+            color: black;
+            border-radius: 6px;
+        }
+        button{
+            hover
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+   <div class="form_container"> 
+    <h1 style="text-align: center; margin-bottom: 20px;">Registration Form</h1>
+    <form action="">
+        <div class="form_group">
+          <label for="">Name:</label>
+          <input type="text" placeholder="Enter your name" required>
+            </div>
+
+             <div class="form_group">
+          <label for="">Email:</label>
+          <input type="email" placeholder="Enter your email" required>
+             </div>
+
+             <div class="form_group">
+          <label for="">Password</label>
+          <input type="password" placeholder="Enter your password" required>
+          </div>
+
+          <div class="form_group">
+          <label for="">Gender</label>
+          <select name="gender" id="gender">
+            <option value="">Male</option>
+            <option value="">Female</option>
+          </select>
+          </div>
+
+          <button>Register</button>
+    </form>
+    </div>
+</body>
+</html>
